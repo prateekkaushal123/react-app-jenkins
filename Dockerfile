@@ -1,8 +1,9 @@
 FROM node
 
 RUN echo 'in docker file'
-COPY target/app /deployments/
+COPY ./app
 RUN echo 'folder copied'
+CMD cd app
 CMD npm install
 CMD npm start
 
