@@ -1,6 +1,8 @@
 FROM node
 
+echo 'in docker file'
 COPY target/app /deployments/
+echo 'folder copied'
 CMD npm install
 CMD npm start
 
