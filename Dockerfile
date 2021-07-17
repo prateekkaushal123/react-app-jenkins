@@ -1,7 +1,7 @@
 FROM node
 
 RUN echo 'in docker file'
-COPY ./app
+COPY ./app /deployements
 RUN echo 'folder copied'
 CMD cd app
 CMD npm install
