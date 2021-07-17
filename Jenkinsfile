@@ -21,7 +21,7 @@ pipeline {
                                 git 'https://github.com/prateekkaushal123/react-app-jenkins.git'
 
                                 // Run Maven on a Unix agent.
-                                sh "mvn -Dmaven.test.failure.ignore=true clean install"
+                               // sh "mvn -Dmaven.test.failure.ignore=true clean install"
 
                                 }
 
